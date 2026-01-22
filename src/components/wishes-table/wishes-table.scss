@@ -1,0 +1,48 @@
+table.wishes-table {
+	width: 100%;
+	padding: 20px 60px;
+	border-collapse: collapse;
+	color: var(--color-text);
+
+	thead {
+		text-align: left;
+		color: var(--color-text);
+		background-color: var(--color-gray);
+
+		th {
+			padding: 5px 40px;
+		}
+	}
+
+	tbody td {
+		padding: 5px 40px;
+		margin: 0 10px;
+		background-color: var(--color-bg-light);
+		border-bottom: 1px solid var(--color-gray);
+	}
+
+	.edit-pull,
+	.del-pull {
+		color: var(--color-text);
+		max-width: 0px;
+		padding: 0;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.edit-pull:hover {
+		color: var(--color-blue);
+	}
+
+	.del-pull:hover {
+		color: var(--color-red);
+	}
+
+	.text-red {
+		color: var(--color-red);
+	}
+
+	.text-blue {
+		color: var(--color-blue);
+	}
+}

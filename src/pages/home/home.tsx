@@ -7,7 +7,7 @@ import { WarningCircle } from "phosphor-react";
 const PageHome: React.FC = () => {
     return (
         <>
-            <div className="page-home page">
+            <div id="home-page" className="page">
                 <section className="left">
                     <div className="section-container">
                         <div className="presentation">

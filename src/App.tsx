@@ -1,11 +1,23 @@
 import React from 'react';
-import MainPage from './pages/main-page/main-page.tsx';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+
+import Header from './components/header/header.tsx';
+import Banner from './components/banner/banner.tsx';
+import Footer from './components/footer/footer.tsx';
+import { routes } from './routes.tsx';
 
 function App() {
   return (
-    <>
-      <MainPage />
-    </>
+    <HashRouter>
+      <Banner />
+      <Header />
+      <Routes>
+        {routes.map((route) => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
+      </Routes>
+      <Footer />
+    </HashRouter>
   );
 }
 
