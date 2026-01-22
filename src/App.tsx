@@ -1,5 +1,5 @@
 import React from 'react';
-import MainPage from './components/main-page/main-page.tsx';
+import MainPage from './pages/main-page/main-page.tsx';
 
 function App() {
   return (

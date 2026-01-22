@@ -3,11 +3,7 @@ import "./header.css";
 
 import { HashRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 
-import PageHome from "../pages/page-home/page-home.tsx";
-import PageAdvancement from "../pages/page-advancement/page-advancement.tsx";
-import PagePlanner from "../pages/page-planner/page-planner.tsx";
-import PageWishes from "../pages/page-wishes/page-wishes.tsx";
-import PageSettings from "../pages/page-settings/page-settings.tsx";
+import Wishes from "../../pages/wishes/wishes.tsx";
 
 import { HouseLine } from "phosphor-react";
 import { CalendarBlank } from "phosphor-react";
@@ -46,11 +42,11 @@ const Header: React.FC = () => {
             </header>
             <div className="header-space"></div>
             <Routes>
-                <Route path="/" element={<PageHome />} />
-                <Route path="/advancement" element={<PageAdvancement />} />
-                <Route path="/planner" element={<PagePlanner />} />
-                <Route path="/wishes" element={<PageWishes />} />
-                <Route path="/settings" element={<PageSettings />} />
+                <Route path="/"  />
+                <Route path="/advancement" />
+                <Route path="/planner" />
+                <Route path="/wishes" element={<Wishes />} />
+                <Route path="/settings" />
             </Routes>
         </Router>
     );
