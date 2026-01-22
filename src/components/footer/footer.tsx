@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./footer.scss";
 
 import { GithubLogo } from "phosphor-react";
 import { TwitterLogo } from "phosphor-react";
@@ -9,7 +9,7 @@ import { Envelope } from "phosphor-react";
 const Footer: React.FC = () => {
     return (
         <>
-            <footer className="footer">
+            <footer>
                 <div className="footer-container">
                     <div className="footer-content">
                         <div className="col">

@@ -22,11 +22,10 @@
   --color-blue-light: #d8e9ff;
   --color-yellow: #e0d597;
   --color-yellow-light: #fff9d8;
-
 }
 
 ::selection {
-  background-color: var(--color-primary); /* Couleur de fond pour le texte sélectionné */
+  background-color: var(--color-primary);
   color: #ffffff;
 }
 
@@ -38,6 +37,8 @@ body {
 
   background-color: var(--color-bg);
 }
+
+/* fonts */
 
 h1, h2, header a,
 footer h3, footer h4 {
@@ -69,11 +70,6 @@ a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
 }
 
 .text-red {

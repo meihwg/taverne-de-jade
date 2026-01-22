@@ -1,9 +1,10 @@
 import React from "react";
-import "./header.css";
+import "./header.scss";
 
 import { HashRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 
 import Wishes from "../../pages/wishes/wishes.tsx";
+import Home from "../../pages/home/home.tsx";
 
 import { HouseLine } from "phosphor-react";
 import { CalendarBlank } from "phosphor-react";
@@ -42,7 +43,7 @@ const Header: React.FC = () => {
             </header>
             <div className="header-space"></div>
             <Routes>
-                <Route path="/"  />
+                <Route path="/" element={<Home />} />
                 <Route path="/advancement" />
                 <Route path="/planner" />
                 <Route path="/wishes" element={<Wishes />} />
